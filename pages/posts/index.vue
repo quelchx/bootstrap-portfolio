@@ -3,7 +3,7 @@
     <AOS
       duration="300"
       delay="500"
-      class="p-4 p-md-5 mb-4 text-white rounded bg-dark"
+      class="is-article-heading p-4 p-md-5 mb-4 text-white rounded bg-dark"
     >
       <h2>Articles</h2>
       <p>

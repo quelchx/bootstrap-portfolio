@@ -26,22 +26,6 @@
         </template>
       </Section>
       <Section
-        title="Perty UI"
-        route="https://marketplace.visualstudio.com/items?itemName=ericquelch.perty"
-        button="btn-secondary bounce"
-      >
-        <template v-slot:svg>
-          <CubeSolidSVG />
-        </template>
-        <template v-slot:paragraph>
-          <p>
-            The UI Theme that keeps things simple and clean. Based off the
-            GitHub Dark Theme color palette with a twist. Spice up your Visual
-            Code Editor and add this theme today.
-          </p>
-        </template>
-      </Section>
-      <Section
         title="AOS Vue"
         route="https://www.npmjs.com/package/aos-vue"
         button="btn-primary shuffle"
@@ -65,6 +49,22 @@
               The design of This component is to leverage the aos.js library and
               its features, customized towards the Vue way.
             </span>
+          </p>
+        </template>
+      </Section>
+      <Section
+        title="Perty UI"
+        route="https://marketplace.visualstudio.com/items?itemName=ericquelch.perty"
+        button="btn-secondary bounce"
+      >
+        <template v-slot:svg>
+          <CubeSolidSVG />
+        </template>
+        <template v-slot:paragraph>
+          <p>
+            The UI Theme that keeps things simple and clean. Based off the
+            GitHub Dark Theme color palette with a twist. Spice up your Visual
+            Code Editor and add this theme today.
           </p>
         </template>
       </Section>

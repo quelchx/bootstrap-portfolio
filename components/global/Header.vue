@@ -9,18 +9,18 @@
       <span class="fs-4 is-logo bounce">quelch()</span>
     </a>
 
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills justify-content-center">
       <li
         class="nav-item switch-decoration"
         v-for="(route, index) in routes"
         :key="index"
       >
-        <nuxt-link class="nav-link" :to="route.route">
+        <nuxt-link class="nav-link shuffle" :to="route.route">
           {{ route.name }}
         </nuxt-link>
       </li>
-      <li class="nav-item">
-        <a @click="switchTheme" class="nav-link">{{`toggle('${theme} theme')`}}</a>
+      <li class="nav-item bounce">
+        <a @click="switchTheme" class="nav-link switch-decoration">{{`toggle(${theme})`}}</a>
       </li>
     </ul>
   </header>

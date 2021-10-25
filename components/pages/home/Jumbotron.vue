@@ -1,6 +1,6 @@
 <template>
   <div class="row align-items-md-stretch">
-    <div class="col-md-6">
+    <div class="col-md-6 p-1">
       <div class="h-100 p-5 text-white bg-dark rounded-3">
         <h2>My Education</h2>
         <p>
@@ -14,7 +14,7 @@
         </p>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 p-1">
       <div class="h-100 p-5 bg-light border rounded-3">
         <h2>My Templates</h2>
         <p>

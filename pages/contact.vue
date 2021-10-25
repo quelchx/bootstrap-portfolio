@@ -21,14 +21,14 @@
       delay="200"
       class="row align-items-md-stretch"
     >
-      <Column title="Other Ways To Contact">
+      <Column class="p-1" title="Other Ways To Contact">
         <p>
           You can always send me an
           <Link path="mailto:quelchx@gmail.com" name="email" />
           or reach out to me on discord.
         </p>
       </Column>
-      <Column title="How This Form Works">
+      <Column class="p-1" title="How This Form Works">
         <p>
           All form data is safe, and you will not recieve junk mail. All
           information is handled through

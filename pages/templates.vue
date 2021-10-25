@@ -9,7 +9,8 @@
       </p>
       <AOS delay="300" duration="300" animation="slide-left" class="mb-5">
         <a
-          href="https://github.com/quelchx.github.io"
+          href="https://github.com/quelchx/templates"
+          target="_blank"
           class="btn btn-dark bounce btn-md px-4"
           >View Github Repository</a
         >

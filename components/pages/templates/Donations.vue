@@ -8,7 +8,10 @@
     </p>
     <ul class="icon-list">
       <li class="bounce">
-        <Link name="Donations" link="#" />
+        <Link
+          name="Donations"
+          link="https://www.paypal.com/donate?hosted_button_id=U3Z4B6SDYDDSS"
+        />
       </li>
       <li class="bounce">
         <Link name="My Github" link="https://github.com/quelchx" />

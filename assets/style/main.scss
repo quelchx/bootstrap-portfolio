@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins&display=swap');
-
+@import './utils/colors';
 @import './helpers/animations';
-@import './utils/navbar.scss';
+@import './components/navbar.scss';
+@import './helpers//theme';
 
 button .is-link {
-  color: white;
+  color: $light;
   text-decoration: none;
 }
 
@@ -17,17 +18,17 @@ button .is-link {
 }
 
 .to-top {
-  color: #467555;
+  color: $green;
 
   &:hover {
-    color: #465375;
+    color: $slate;
     font-weight: bold;
     transition: font-weight 1s, color 2s;
   }
 }
 
 .is-link {
-  color: #467555;
+  color: $green;
   text-decoration: none;
 }
 
@@ -65,40 +66,16 @@ button .is-link {
   }
 }
 
-.dark {
-  background-color: #2c2c2c;
-  color: white;
-
-  .icon-square {
-    background-color: #2c2c2c !important;
-  }
-  .bg-dark {
-    background-color: white !important;
-    color: #2c2c2c !important;
-  }
-  .bg-light {
-    background-color: #2c2c2c !important;
-  }
-
-  .text-dark {
-    color: white !important;
-  }
-
-  .card-text {
-    color: #2c2c2c !important;
-  }
-}
-
 .is-typed {
   font-family: 'Monaco';
   span.typed {
-    color: steelblue;
+    color: $slate;
   }
 
   span.cursor {
     display: inline-block;
     width: 4px;
-    background-color: black;
+    background-color: $dark;
     animation: blink 1s infinite;
   }
 

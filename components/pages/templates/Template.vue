@@ -1,6 +1,6 @@
 <template>
   <div class="col">
-    <div class="card shadow-sm">
+    <div class="card is-template-card shadow-sm">
       <img :src="require('~/assets/images/features.png')" alt="demo-template">
       <div class="card-body">
         <p class="card-text">

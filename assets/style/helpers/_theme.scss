@@ -1,0 +1,56 @@
+.dark {
+  background-color: $dark;
+  color: $light;
+
+  .btn-dark {
+    background-color: $slate;
+  }
+
+  .btn-primary {
+    background-color: $lime;
+    border-color: $lime;
+    a {
+      color: $slate !important;
+    }
+  }
+
+  .icon-square {
+    background-color: $dark !important;
+  }
+  .bg-dark {
+    background-color: $light !important;
+    color: $dark !important;
+  }
+  .is-article-heading {
+    background-color: $green !important;
+    color: $light !important;
+  }
+
+  .bg-light {
+    background-color: $dark !important;
+  }
+
+  .text-dark {
+    color: $light !important;
+  }
+
+  .card-text {
+    color: $light !important;
+  }
+
+  .is-template-card p.card-text {
+    color: $dark !important;
+  }
+
+  .nav-link {
+    color: $lime;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  span.cursor {
+    background-color: $light !important;
+  }
+}

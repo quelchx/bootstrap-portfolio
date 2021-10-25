@@ -23,7 +23,7 @@
           <button type="button" class="bounce btn btn-dark btn-lg px-4 me-md-2">
             <Link path="https://github.com/quelchx" name="Github" />
           </button>
-          <button type="button" class="shuffle btn btn-primary btn-lg px-4">
+          <button type="button" class="shuffle btn btn-info btn-lg px-4">
             <Link path="#" name="Linkedin" />
           </button>
         </div>

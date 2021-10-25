@@ -1,0 +1,11 @@
+.nav-link, .is-logo {
+  // font-family: 'Architects Daughter', cursive;
+  font-family: 'Monaco';
+}
+
+@media (max-width: 768px) {
+  .is-logo {
+    padding-top: 8px;
+    padding-right: 20px;
+  }
+}

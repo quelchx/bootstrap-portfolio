@@ -11,7 +11,7 @@
       </p>
     </AOS>
 
-    <div v-if="loading && !error">
+    <div class="is-loading" v-if="loading && !error">
       <Spinner />
     </div>
 
@@ -29,6 +29,7 @@
         :key="post.id"
       >
         <Article
+          keep-alive
           :desc="post.description"
           :title="post.title"
           :id="post.id"
@@ -37,7 +38,7 @@
       </AOS>
     </article>
 
-    <div class="row g-5">
+    <div class="row g-5" keep-alive>
       <aside class="col-md-8">
         <AOS
           duration="200"

@@ -2,6 +2,10 @@
   background-color: $dark;
   color: $light;
 
+  .is-loading {
+    height: 70vh;
+  }
+
   .btn-dark {
     background-color: $slate;
   }

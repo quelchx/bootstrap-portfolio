@@ -13,13 +13,6 @@ const meta = {
       content: `Contact Eric Quelch throught this form or by email`,
     },
   ],
-  templates: [
-    {
-      hid: `Templates made by Eric Quelch`,
-      name: `Templates`,
-      content: `Templates made by Eric Quelch at https://github.com/quelchx/templates`,
-    },
-  ],
   articles: [
     {
       hid: `Eric Quelch - Articles and Guides`,

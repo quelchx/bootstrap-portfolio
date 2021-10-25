@@ -7,6 +7,7 @@
       <Error />
     </div>
     <AOS
+      keep-alive
       animation="fade-up"
       duration="1000"
       delay="400"

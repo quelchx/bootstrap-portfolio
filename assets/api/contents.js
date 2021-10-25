@@ -60,10 +60,10 @@ export const content = {
     "MongoDB"
   ],
   files: [
-    "60+ files",
+    "75+ files",
     "2.1MB",
     "100+ hours of thinking and testing",
-    "50+ hours of coding",
+    "60+ hours of coding",
     "countless hours of research"
   ],
   assets: [

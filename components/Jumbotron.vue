@@ -16,20 +16,13 @@
     </div>
     <div class="col-md-6 p-1">
       <div class="h-100 p-5 bg-light border rounded-3">
-        <h2>My Templates</h2>
+        <h2>Blogs</h2>
         <p>
-          Check out my pre-made templates using various JavaScript frameworks,
-          CSS libraries and SCSS.
+          Check out some of my blog posts that cover an array of topics.
         </p>
         <p>
-          All <nuxt-link to="/templates">templates</nuxt-link> are free to view,
-          copy and utilize are your liking. If you feel generous, please star
-          the GitHub repository.
-        </p>
-        <p>
-          Check out some
-          <nuxt-link to="/posts">articles and guides</nuxt-link> that cover a
-          wide array of programming topics.
+          All <nuxt-link to="/posts">blogs</nuxt-link> are free to view,
+          copy and utilize are your liking. 
         </p>
       </div>
     </div>

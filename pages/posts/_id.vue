@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="article" :aria-label="post.title">
-    <div v-if="loading && !error">
+    <div class="is-loading" v-if="loading && !error">
       <Spinner />
     </div>
     <div v-if="error">
@@ -12,7 +12,7 @@
       duration="400"
       v-if="!error && !loading"
     >
-      <p>Posted: {{ new Date(post.createdAt).toUTCString() }}</p>
+      <p>Posted: {{ formatDate(post.createdAt) }}</p>
       <h1>{{ post.title }}</h1>
       <p v-html="article"></p>
       <button class="btn btn-primary">
@@ -24,6 +24,7 @@
 
 <script>
 import marked from 'marked'
+import formatDate from '~/functions/formatDate'
 import Spinner from '~/components/Spinner'
 import Error from '~/components/Error'
 import AOS from '~/components/AOS'
@@ -46,6 +47,9 @@ export default {
       error: null,
       loading: true,
     }
+  },
+  methods: {
+    formatDate,
   },
   head() {
     return {

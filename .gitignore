@@ -1,4 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+# ignoring article directory
+temp
+
 ### Node template
 # Logs
 /logs

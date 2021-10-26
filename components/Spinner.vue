@@ -1,6 +1,8 @@
 <template>
   <div class="d-flex align-items-center">
-    <strong>Loading Articles...</strong>
-    <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+    <strong class="bounce">Loading Articles From Heroku API...</strong>
+    <div class="spinner-grow text-success ms-auto" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
   </div>
 </template>

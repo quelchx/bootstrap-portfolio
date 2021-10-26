@@ -7,7 +7,8 @@
     >
       <h2 class="monaco">.blog()</h2>
       <p class="mx-3">
-        Blogs are guides with intensions to help new developers learn new tricks and techniques.
+        Blogs are guides with intensions to help new developers learn new tricks
+        and techniques.
       </p>
     </AOS>
 
@@ -97,8 +98,6 @@ import Spinner from '~/components/Spinner'
 import Error from '~/components/Error'
 import Article from '~/components/Article'
 
-import meta from '~/api/meta'
-
 export default {
   components: { Spinner, Error, Article, AOS },
   async beforeCreate() {
@@ -129,7 +128,15 @@ export default {
   },
   head() {
     return {
-      meta: meta.articles,
+      title: 'Blogs',
+      titleTemplate: 'Eric Quelch - Blogs',
+      meta: [
+        {
+          hid: `Eric Quelch - Blogs, Articles and Guides`,
+          name: `Articles and Guides by Eric Quelch`,
+          content: `Read articles and guides writen by Eric Quelch`,
+        },
+      ],
     }
   },
 }

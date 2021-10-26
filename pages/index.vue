@@ -40,11 +40,8 @@ import Projects from '~/components/Projects'
 import Jumbotron from '~/components/Jumbotron'
 import Skills from '~/components/Skills'
 import MadeWith from '~/components/MadeWith'
-
 import AOS from '~/components/AOS'
-
 import { content } from '~/api/contents'
-import meta from '~/api/meta'
 
 export default {
   data() {
@@ -57,7 +54,15 @@ export default {
   },
   head() {
     return {
-      meta: meta.index,
+      title: 'Eric Quelch Portfolio',
+      titleTemplate: 'Eric Quelch - Portfolio',
+      meta: [        
+        {
+          hid: `Eric Quelch's personal portfolio and resume`,
+          name: `Eric Quelch's landing page for personal portfolio and resume`,
+          content: `Information about Eric Quelch and his experience with web development`,
+        },
+      ],
     }
   },
   components: { Hero, Projects, Jumbotron, Skills, MadeWith, AOS },

@@ -19,8 +19,11 @@
           {{ route.name }}
         </nuxt-link>
       </li>
+      <li class="nav-item shuffle">
+        <a class="nav-link switch-decoration" href="mailto:quelchx@gmail.com">.email()</a>
+      </li>
       <li class="nav-item bounce">
-        <a @click="switchTheme" class="nav-link switch-decoration">{{`toggle(${theme})`}}</a>
+        <a @click="switchTheme" class="nav-link switch-decoration">{{`.toggle(${theme})`}}</a>
       </li>
     </ul>
   </header>

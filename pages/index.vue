@@ -1,7 +1,7 @@
 <template>
   <div id="index" aria-label="index">
     <AOS
-      duration="1000"
+      duration="500"
       anchor="#index"
       delay="300"
       animation="fade-down"
@@ -10,41 +10,41 @@
       <Hero class="is-hero" />
     </AOS>
     <AOS
-      duration="1000"
+      duration="500"
       delay="200"
       animation="fade-right"
       class="container px-4 py-5"
     >
       <Projects class="is-projects" />
     </AOS>
-    <AOS duration="900" delay="400" animation="fade-left" class="container">
+    <AOS duration="400" delay="400" animation="fade-left" class="container">
       <Jumbotron />
     </AOS>
     <AOS
       animation="fade-up"
-      duration="1200"
+      duration="600"
       delay="200"
       class="container px-4 py-5"
     >
       <Skills :assets="skills" />
     </AOS>
-    <AOS animation="zoom-in" duration="1200" delay="300" class="container px-4">
+    <AOS animation="zoom-in" duration="600" delay="300" class="container px-4">
       <MadeWith :assets="assets" :files="files" :libraries="libraries" />
     </AOS>
   </div>
 </template>
 
 <script>
-import Hero from '~/components/pages/home/Hero'
-import Projects from '~/components/pages/home/Projects'
-import Jumbotron from '~/components/pages/home/Jumbotron'
-import Skills from '~/components/pages/home/Skills'
-import MadeWith from '~/components/pages/home/MadeWith'
+import Hero from '~/components/Hero'
+import Projects from '~/components/Projects'
+import Jumbotron from '~/components/Jumbotron'
+import Skills from '~/components/Skills'
+import MadeWith from '~/components/MadeWith'
 
-import AOS from '~/components/shared/AOS'
+import AOS from '~/components/AOS'
 
-import { content } from '~/assets/api/contents'
-import meta from '~/assets/api/meta'
+import { content } from '~/api/contents'
+import meta from '~/api/meta'
 
 export default {
   data() {

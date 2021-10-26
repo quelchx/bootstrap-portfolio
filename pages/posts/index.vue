@@ -5,9 +5,9 @@
       delay="500"
       class="is-article-heading p-4 p-md-5 mb-4 text-white rounded bg-dark"
     >
-      <h2>Articles</h2>
-      <p>
-        Articles and guides intensions are to help new developers get started.
+      <h2 class="monaco">.blog()</h2>
+      <p class="mx-3">
+        Blogs are guides with intensions to help new developers learn new tricks and techniques.
       </p>
     </AOS>
 
@@ -19,12 +19,12 @@
       <Error />
     </div>
 
-    <article v-if="!loading && !error" class="row stretch mb-2">
+    <article v-if="!loading && !error" class="row mb-2">
       <AOS
         duration="500"
         delay="500"
         animation="zoom-in"
-        class="col align-self-center"
+        class="col-12 align-self-center"
         v-for="post in posts"
         :key="post.id"
       >
@@ -65,7 +65,7 @@
           style="top: 2rem;"
         >
           <div class="p-4 mb-3 bg-light rounded">
-            <h4>About</h4>
+            <h4 class="monaco shuffle">.about()</h4>
             <p class="mb-0">
               Every articles intention is to help educate and inspire new and
               experienced developers. Majority of the articles will cover the
@@ -74,10 +74,10 @@
             </p>
           </div>
 
-          <div class="p-4">
-            <h4>All Articles</h4>
+          <div class="p-4 bg-light rounded">
+            <h4 class="monaco shuffle">.blogs()</h4>
             <ol class="list-unstyled">
-              <li class="pt-3" v-for="post in cache" :key="post.id">
+              <li class="my-2 bounce" v-for="post in cache" :key="post.id">
                 <nuxt-link :to="`/posts/${post.id}`">
                   {{ post.title }}
                 </nuxt-link>
@@ -92,12 +92,12 @@
 
 <script>
 import marked from 'marked'
-import AOS from '~/components/shared/AOS'
-import Spinner from '~/components/shared/Spinner'
-import Error from '~/components/shared/Error'
-import Article from '~/components/pages/posts/Article'
+import AOS from '~/components/AOS'
+import Spinner from '~/components/Spinner'
+import Error from '~/components/Error'
+import Article from '~/components/Article'
 
-import meta from '~/assets/api/meta'
+import meta from '~/api/meta'
 
 export default {
   components: { Spinner, Error, Article, AOS },

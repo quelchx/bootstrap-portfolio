@@ -33,9 +33,9 @@
 </template>
 
 <script>
-import Link from '~/components/shared/Link'
+import Link from '~/components/Link'
 import BannerSVG from "~/assets/svg/BannerSVG";
-import Typewriter from '~/components/shared/Typewriter'
+import Typewriter from '~/components/Typewriter'
 export default {
   components: { BannerSVG, Link, Typewriter },
   data() {

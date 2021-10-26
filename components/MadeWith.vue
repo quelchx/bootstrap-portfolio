@@ -9,8 +9,8 @@
         </p>
         <ul class="icon-list">
           <AOS
-            delay="1000"
-            duration="1200"
+            delay="500"
+            duration="600"
             animation="fade-right"
             v-for="(library, index) in libraries"
             :key="index"
@@ -25,8 +25,8 @@
         <ul class="icon-list">
           <AOS
             animation="fade-left"
-            duration="1200"
-            delay="1000"
+            duration="600"
+            delay="500"
             v-for="(file, index) in files"
             :key="index"
           >
@@ -37,8 +37,8 @@
         <ul class="icon-list">
           <AOS
             animation="fade-left"
-            duration="1100"
-            delay="1300"
+            duration="500"
+            delay="500"
             v-for="(asset, index) in assets"
             :key="index"
           >
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import AOS from '~/components/shared/AOS'
+import AOS from '~/components/AOS'
 export default {
   components: { AOS },
   props: ['files', 'libraries', 'assets'],

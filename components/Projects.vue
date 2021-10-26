@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import Section from '~/components/pages/home/Section'
+import Section from '~/components/Section'
 import CubesSolidSVG from '~/assets/svg/CubesSolidSVG'
 import CubeSolidSVG from '~/assets/svg/CubeSolidSVG'
 import BoxOpenSVG from '~/assets/svg/BoxOpenSVG'

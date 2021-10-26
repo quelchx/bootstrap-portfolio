@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { routes } from '~/assets/api/routes'
+import { routes } from '~/api/routes'
 export default {
   data() {
     return {

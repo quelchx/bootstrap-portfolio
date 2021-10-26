@@ -34,7 +34,7 @@ export default {
   },
   css: ['@/style/main.scss'],
   plugins: ['~/plugins/aos.js'],
-  components: false,
+  components: true,
   generate: {
     fallback: true,
   },

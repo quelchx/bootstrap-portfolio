@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins&display=swap');
-@import './utils/colors';
+@import './helpers/colors';
 @import './helpers/animations';
-@import './components/navbar.scss';
-@import './helpers//theme';
+@import './helpers/theme';
+
+.nav-link, .is-logo {
+  font-family: 'Monaco';
+}
+
+.monaco {
+  font-family: 'Monaco';
+}
+
+@media (max-width: 768px) {
+  .is-logo {
+    padding-top: 8px;
+    padding-right: 20px;
+  }
+}
 
 button .is-link {
   color: $light;

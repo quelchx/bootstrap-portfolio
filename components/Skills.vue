@@ -4,7 +4,7 @@
     <div
       class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
     >
-      <AOS animation='zoom-out' duration='1500' delay='500' v-for="(skill, index) in assets" :key="index">
+      <AOS animation='zoom-out' duration='600' delay='500' v-for="(skill, index) in assets" :key="index">
         <div class="col d-flex align-items-start">
           <i :class="'skill-icon ' + skill.icon"></i>
           <div class="mx-2">
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import AOS from '~/components/shared/AOS'
+import AOS from '~/components/AOS'
 export default {
   components: { AOS },
   props: ['assets'],

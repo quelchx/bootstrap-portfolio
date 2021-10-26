@@ -9,8 +9,7 @@
     <AOS
       keep-alive
       animation="fade-up"
-      duration="1000"
-      delay="400"
+      duration="400"
       v-if="!error && !loading"
     >
       <p>Posted: {{ new Date(post.createdAt).toUTCString() }}</p>
@@ -25,9 +24,9 @@
 
 <script>
 import marked from 'marked'
-import Spinner from '~/components/shared/Spinner'
-import Error from '~/components/shared/Error'
-import AOS from '~/components/shared/AOS'
+import Spinner from '~/components/Spinner'
+import Error from '~/components/Error'
+import AOS from '~/components/AOS'
 export default {
   components: { Spinner, Error, AOS },
   async mounted() {

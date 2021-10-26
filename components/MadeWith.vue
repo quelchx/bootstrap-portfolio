@@ -1,5 +1,5 @@
 <template>
-  <section id="made-with" aria-label="made-with">
+  <section>
     <div class="row g-5">
       <div class="col-md-6">
         <h2 class="switch-decoration">Made With</h2>

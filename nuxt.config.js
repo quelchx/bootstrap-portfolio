@@ -32,7 +32,7 @@ export default {
       },
     ],
   },
-  css: ['@/assets/style/main.scss'],
+  css: ['@/style/main.scss'],
   plugins: ['~/plugins/aos.js'],
   components: false,
   generate: {

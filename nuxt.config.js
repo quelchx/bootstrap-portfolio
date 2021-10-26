@@ -2,7 +2,7 @@ export default {
   ssr: false,
   target: 'static',
   head: {
-    title: 'Eric Quelch',
+    title: 'quelchx.com',
     titleTemplate: 'quelchx',
     htmlAttrs: {
       lang: 'en',

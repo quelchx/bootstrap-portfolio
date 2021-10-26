@@ -2,7 +2,7 @@
 export const routes = {
   paths: [
     { route: "/", name: ".me()" },
+    { route: "/posts", name: ".blog()" },
     { route: "/contact", name: ".contact()" },
-    { route: "/posts", name: ".blog()" }
   ]
 };

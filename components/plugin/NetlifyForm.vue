@@ -1,11 +1,11 @@
 <template>
   <form
-    name="ask-question"
+    name="contact"
     method="post"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
+    netlify
+    netlify-honeypot='bot-field'
   >
-    <input type="hidden" name="form-name" value="ask-question" />
+  <input type="hidden" name="form-name" value='contact'>
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
       <input
@@ -14,6 +14,7 @@
         v-model="email"
         type="email"
         class="form-control"
+        required
         placeholder="name@example.com"
         @change="validate()"
       />
@@ -24,13 +25,11 @@
         id="message"
         name="message"
         v-model="message"
+        required
         class="form-control"
         rows="3"
         @change="validate()"
       ></textarea>
-    </div>
-    <div class="mb-3">
-      <div data-netlify-recaptcha="true"></div>
     </div>
     <button :disabled="isDisabled" class="btn btn-primary" type="submit">
       Send

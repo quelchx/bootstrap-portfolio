@@ -6,13 +6,6 @@ const meta = {
       content: `Information about Eric Quelch and his experience with web development`,
     },
   ],
-  contact: [
-    {
-      hid: `Contact Eric Quelch through this form or by email`,
-      name: `Contact Eric Quelch`,
-      content: `Contact Eric Quelch throught this form or by email`,
-    },
-  ],
   articles: [
     {
       hid: `Eric Quelch - Articles and Guides`,

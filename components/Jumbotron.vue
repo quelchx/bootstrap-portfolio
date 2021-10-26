@@ -8,7 +8,7 @@
           Fanshawe College in my final year.
         </p>
         <p>
-          I have been in College for almost four years now, learning various
+          I have been in College for almost three years now, learning various
           JavaScript frameworks, technologies, strategies and
           industry-established methods to create top-notch applications.
         </p>

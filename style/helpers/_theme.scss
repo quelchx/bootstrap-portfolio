@@ -1,3 +1,4 @@
+@import './mixins';
 .dark {
   background-color: $dark;
   color: $light;
@@ -6,25 +7,59 @@
     height: 70vh;
   }
 
+  code {
+    color: $cyan;
+  }
+
+  #article a {
+    color: $lime !important;
+  }
+
+  pre code {
+    color: $lime;
+
+    &.language-scss {
+      color: $pink;
+    }
+
+    &.language-html {
+      color: $orange;
+    }
+
+    &.language-js {
+      color: $lime;
+    }
+  }
+
+
+  .btn-info {
+    @include change-color($plum)
+  }
+
+  .btn-secondary {
+    @include change-color($brown)
+  }
+
   .btn-dark {
-    background-color: $slate;
+    @include change-color($slate)
   }
 
   .btn-primary {
-    background-color: $lime;
-    border-color: $lime;
+    @include change-color($green);
     a {
-      color: $slate !important;
+      color: $light !important;
     }
   }
 
   .icon-square {
     background-color: $dark !important;
   }
+
   .bg-dark {
     background-color: $light !important;
     color: $dark !important;
   }
+
   .is-article-heading {
     background-color: $green !important;
     color: $light !important;

@@ -57,19 +57,19 @@ export const content = {
     "Strapi CMS",
     "Netlify",
     "Heroku",
-    "MongoDB"
+    "MongoDB",
+    "Bootstrap"
   ],
   files: [
-    "75+ files",
-    "2.1MB",
-    "100+ hours of thinking and testing",
-    "60+ hours of coding",
-    "countless hours of research"
+    "25+ files made with Nuxt.js",
+    "200.4 MB package bundled to 429KB and served to Netlify",
+    "Countless hours of thinking, practice and testing",
+    "100+ hours of coding",
+    "Multiple changes, refactors and updates"
   ],
   assets: [
     "Lost track of pots of coffee",
-    "Insane amount of cups of java",
-    "Heart attack amounts of sugar",
-    "Added 1 Easter Egg for you to find"
+    "Too much sugar for my liking",
+    "Few energy drinks here and there"
   ]
 };

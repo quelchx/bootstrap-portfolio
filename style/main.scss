@@ -3,6 +3,26 @@
 @import './helpers/animations';
 @import './helpers/theme';
 
+code {
+  color: $brown;
+}
+
+pre code {
+  color: $green;
+
+  &.language-scss {
+    color: $plum;
+  }
+
+  &.language-html {
+    color: $blue;
+  }
+
+  &.language-js {
+    color: $red;
+  }
+}
+
 .nav-link, .is-logo {
   font-family: 'Monaco';
 }

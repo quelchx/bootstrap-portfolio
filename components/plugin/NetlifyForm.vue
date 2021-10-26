@@ -1,11 +1,11 @@
 <template>
   <form
-    name="ask-question"
+    name="contact"
     method="post"
     data-netlify="true"
     netlify-honeypot="bot-field"
   >
-    <input type="hidden" name="ask-question" value="ask-question" />
+    <input type="hidden" name="form-name" value="contact" />
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
       <input

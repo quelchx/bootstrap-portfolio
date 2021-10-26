@@ -35,7 +35,7 @@
     <button :disabled="isDisabled" class="btn btn-primary" type="submit">
       Send
     </button>
-    <button @click="clear()" class="btn btn-danger" type="button">
+    <button @click.prevent="clear()" class="btn btn-danger" type="button">
       Clear
     </button>
   </form>

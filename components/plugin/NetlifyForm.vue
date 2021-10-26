@@ -1,11 +1,13 @@
 <template>
+  <!-- currently this component is not in use due to netlify/nuxt issue in detecting this form -->
   <form
     name="contact"
-    method="post"
+    method="POST"
     netlify
-    netlify-honeypot='bot-field'
+    data-netlify="true"
+    netlify-honeypot="bot-field"
   >
-  <input type="hidden" name="form-name" value='contact'>
+    <input type="hidden" name="form-name" value="contact" />
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
       <input
@@ -46,28 +48,28 @@ export default {
     return {
       email: null,
       message: null,
-      isDisabled: true
-    };
+      isDisabled: true,
+    }
   },
   methods: {
     clear() {
-      this.isDisabled = true;
-      return (this.email = this.message = null);
+      this.isDisabled = true
+      return (this.email = this.message = null)
     },
     validate() {
       if (
-        this.message === "" ||
+        this.message === '' ||
         this.message === null ||
-        this.email === "" ||
+        this.email === '' ||
         this.email === null
       ) {
-        return (this.isDisabled = true);
+        return (this.isDisabled = true)
       }
       if (this.message != null || this.email != null) {
-        console.log(this.message);
-        return (this.isDisabled = false);
+        console.log(this.message)
+        return (this.isDisabled = false)
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>

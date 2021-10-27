@@ -100,7 +100,7 @@ import Article from '~/components/Article'
 
 export default {
   components: { Spinner, Error, Article, AOS },
-  async beforeCreate() {
+  async fetch() {
     try {
       let res = await fetch(process.env.blog)
       this.posts = await res.json()

@@ -30,7 +30,7 @@ import Error from '~/components/Error'
 import AOS from '~/components/AOS'
 export default {
   components: { Spinner, Error, AOS },
-  async mounted() {
+  async fetch() {
     try {
       let res = await fetch(`${process.env.blog}/${this.$route.params.id}`)
       this.post = await res.json()

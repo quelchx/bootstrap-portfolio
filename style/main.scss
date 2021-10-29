@@ -23,7 +23,8 @@ pre code {
   }
 }
 
-.nav-link, .is-logo {
+.nav-link,
+.is-logo {
   font-family: 'Monaco';
 }
 
@@ -120,4 +121,30 @@ button .is-link {
   span.cursor.typing {
     animation: none;
   }
+}
+
+.has-shadow {
+  border: 1px solid #0808039f;
+  padding: 8px;
+  box-shadow: 2px 4px #0808039f;
+}
+
+.wave {
+  position: absolute;
+  top: 50;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 262px;
+}
+
+.wave .shape-fill {
+  fill: hsla(110, 87%, 49%, 0.645);
 }

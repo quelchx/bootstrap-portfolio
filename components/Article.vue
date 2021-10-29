@@ -1,6 +1,6 @@
 <template>
   <div
-    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+    class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
   >
     <div class="col p-4 d-flex flex-column position-static">
       <strong class="d-inline-block mb-2 text-primary">

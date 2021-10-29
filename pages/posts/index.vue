@@ -11,7 +11,6 @@
         and techniques.
       </p>
     </AOS>
-
     <div class="is-loading" v-if="loading && !error">
       <Spinner />
     </div>
@@ -25,7 +24,7 @@
         duration="500"
         delay="500"
         animation="zoom-in"
-        class="col-12 align-self-center"
+        class="col-12 align-self-center my-2 has-shadow"
         v-for="post in posts"
         :key="post.id"
       >
@@ -38,6 +37,8 @@
         />
       </AOS>
     </article>
+
+    <Curve />
 
     <div class="row g-5" keep-alive>
       <aside class="col-md-8">
@@ -63,9 +64,9 @@
           delay="400"
           animation="zoom-out"
           class="position-sticky"
-          style="top: 2rem;"
+          style="top: 2rem"
         >
-          <div class="p-4 mb-3 bg-light rounded">
+          <div class="p-4 mb-3 mt-4 bg-light rounded has-shadow">
             <h4 class="monaco shuffle">.about()</h4>
             <p class="mb-0">
               Every articles intention is to help educate and inspire new and
@@ -75,7 +76,7 @@
             </p>
           </div>
 
-          <div class="p-4 bg-light rounded">
+          <div class="p-4 bg-light rounded has-shadow">
             <h4 class="monaco shuffle">.blogs()</h4>
             <ol class="list-unstyled">
               <li class="my-2 bounce" v-for="post in cache" :key="post.id">
@@ -97,9 +98,10 @@ import AOS from '~/components/AOS'
 import Spinner from '~/components/Spinner'
 import Error from '~/components/Error'
 import Article from '~/components/Article'
+import Curve from '~/components/Curve'
 
 export default {
-  components: { Spinner, Error, Article, AOS },
+  components: { Spinner, Error, Article, AOS, Curve },
   async fetch() {
     try {
       let res = await fetch(process.env.blog)

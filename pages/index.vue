@@ -16,10 +16,12 @@
       class="container px-4 py-5"
     >
       <Projects class="is-projects" />
+      
     </AOS>
     <AOS duration="400" delay="400" animation="fade-left" class="container">
       <Jumbotron />
     </AOS>
+    <Curve/>
     <AOS
       animation="fade-up"
       duration="600"
@@ -41,7 +43,9 @@ import Jumbotron from '~/components/Jumbotron'
 import Skills from '~/components/Skills'
 import MadeWith from '~/components/MadeWith'
 import AOS from '~/components/AOS'
+import Wave from '~/components/Curve'
 import { content } from '~/api/contents'
+import Curve from '~/components/Curve.vue'
 
 export default {
   data() {
@@ -56,7 +60,7 @@ export default {
     return {
       title: 'Eric Quelch Portfolio',
       titleTemplate: 'Eric Quelch - Portfolio',
-      meta: [        
+      meta: [
         {
           hid: `Eric Quelch's personal portfolio and resume`,
           name: `Eric Quelch's landing page for personal portfolio and resume`,
@@ -65,6 +69,7 @@ export default {
       ],
     }
   },
-  components: { Hero, Projects, Jumbotron, Skills, MadeWith, AOS },
+  components: { Hero, Projects, Jumbotron, Skills, MadeWith, AOS, Curve },
 }
 </script>
+

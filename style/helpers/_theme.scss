@@ -6,6 +6,9 @@
   .is-loading {
     height: 70vh;
   }
+  .wave .shape-fill {
+    fill: hsla(194, 87%, 49%, 0.645);
+  }
 
   code {
     color: $cyan;

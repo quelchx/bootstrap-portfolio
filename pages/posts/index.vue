@@ -11,6 +11,7 @@
         and techniques.
       </p>
     </AOS>
+    
     <div class="is-loading" v-if="loading && !error">
       <Spinner />
     </div>
@@ -38,7 +39,7 @@
       </AOS>
     </article>
 
-    <Curve />
+    <Curve v-if="!loading && !error" />
 
     <div class="row g-5" keep-alive>
       <aside class="col-md-8">

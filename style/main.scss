@@ -148,3 +148,17 @@ button .is-link {
 .wave .shape-fill {
   fill: hsla(110, 87%, 49%, 0.645);
 }
+
+.border-bottom {
+  border-color: #08080360 !important;
+}
+
+.is-date {
+  color: $green !important
+}
+
+.btn {
+  border: 1px solid #08080379;
+  padding: 8px;
+  box-shadow: 1px 2px #08080373;
+}

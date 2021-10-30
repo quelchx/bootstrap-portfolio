@@ -6,8 +6,13 @@
   .is-loading {
     height: 70vh;
   }
+
   .wave .shape-fill {
-    fill: hsla(194, 87%, 49%, 0.645);
+    fill: $ocean;
+  }
+
+  .is-date {
+    color: $ocean !important;
   }
 
   code {
@@ -64,7 +69,7 @@
   }
 
   .is-article-heading {
-    background-color: $green !important;
+    background-color: $ocean !important;
     color: $light !important;
   }
 
